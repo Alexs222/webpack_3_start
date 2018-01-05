@@ -91,7 +91,7 @@ var menu = Object(__WEBPACK_IMPORTED_MODULE_0__components_menu_menu__["a" /* def
 document.body.appendChild(menu);
 
 console.log('in index.js');
-
+// alert('test reload');
 
 
 

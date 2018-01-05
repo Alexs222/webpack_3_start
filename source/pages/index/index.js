@@ -3,5 +3,5 @@ var menu = createMenu(['Главная', 'Блог'], 'menu');
 document.body.appendChild(menu);
 
 console.log('in index.js');
+// alert('test reload');
 
-import createMenu from '../../components/menu/menu';
