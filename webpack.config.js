@@ -9,6 +9,7 @@ const css = require('./webpack/css');
 const extractCss = require('./webpack/css.extract');
 const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
+const babel = require('./webpack/babel');
 
 const PATHS = {
         source: path.join(__dirname, 'source'),
@@ -17,6 +18,7 @@ const PATHS = {
 
 const common = merge([
     {
+        devtool: 'source-map',
         entry: {
             'index': PATHS.source + '/pages/index/index.js',
             'blog': PATHS.source + '/pages/blog/blog.js'
@@ -46,7 +48,8 @@ const common = merge([
         ]
     },
     pug(),
-    images()
+    images(),
+    babel()
 ]);
 
 module.exports = function (env) {

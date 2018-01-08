@@ -10,3 +10,6 @@ console.log($);
 console.log(jQuery);
 // alert('test reload');
 
+import test from '../../components/test'
+
+test('Привет webpack')
